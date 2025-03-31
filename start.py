@@ -23,6 +23,6 @@ class Pessoa:
 
 cliente = Pessoa('Felippe', 39)
 cliente.deposito(1000)
-cliente.saque(1500)
+cliente.saque(800)
 
 print(cliente.saldo())
