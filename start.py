@@ -8,7 +8,7 @@ class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
         if idade < 18:
-            raise ValueError('Idade inválida')
+            raise ValueError('Idade inválida, garotão')
         self.idade = idade
 
     def deposito(self, valor):
