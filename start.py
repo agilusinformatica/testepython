@@ -11,7 +11,7 @@ class Pessoa:
             raise ValueError('Idade inválida, garotão')
         self.idade = idade
 
-    def deposito(self, valor):
+    def deposito(self, valor: float):
         self.__saldo += valor
     def saque(self, valor):
         if valor > self.__saldo + self.limite:
@@ -24,9 +24,10 @@ class Pessoa:
         return self.__saldo
 
 
-cliente = Pessoa('Felippe', 39)
-cliente.set_limite(1000)
-cliente.deposito(1000)
-cliente.saque(2500)
+def exemplo():
+    cliente = Pessoa('Felippe', 39)
+    cliente.set_limite(1000)
+    cliente.deposito(1000)
+    cliente.saque(1500)
 
-print(cliente.saldo())
+    print(cliente.saldo())
