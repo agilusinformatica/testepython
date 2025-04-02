@@ -14,7 +14,7 @@ class Pessoa:
         self.__saldo += valor
     def saque(self, valor):
         if valor > self.__saldo:
-            raise ValueError('Saldo insuficiente')
+            raise ValueError('Saldo insuficiente, seu pobre')
         self.__saldo -= valor
 
     def saldo(self):
