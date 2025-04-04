@@ -1,5 +1,5 @@
-import pandas as pd
+from db import sql
 
-df = pd.read_csv('C:\\teste.csv')
+resultado = sql.query("insert into ClientesTeste (Nome, Email) values ('Claudio A. C.', 'claudio@teste.com')")
 
-print(df.info())
+print(resultado)
